@@ -55,7 +55,7 @@ function Artists() {
       }}>
         <p style={{
           marginLeft: '1rem', marginTop: '1rem', color: 'black', fontSize: '20px', paddingTop: '3px',
-          fontWeight: '500', width: "400px"
+          fontWeight: '500',fontFamily: 'Montserrat', width: "400px"
         }}>You might be interested in</p>
       </div>
   

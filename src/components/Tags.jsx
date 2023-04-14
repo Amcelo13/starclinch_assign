@@ -19,7 +19,7 @@ function Tags() {
                     <label htmlFor="" style={{ paddingTop: '3px', paddingLeft: '8px' }}>Tags</label>
                 </div>
             </center>
-            <center style={{ fontSize: '16px', paddingTop: '4rem', color: '#b5b6ba', textAlign: 'left', paddingLeft: '1rem', paddingRight: '1rem' }}>
+            <center style={{fontFamily: 'Montserrat', fontSize: '16px', paddingTop: '4rem', color: '#b5b6ba', textAlign: 'left', paddingLeft: '1rem', paddingRight: '1rem' }}>
             <span style={{ color: 'black' }}>|</span> Charity Celebrity Appearance in Mumbai{' '}
           <span style={{ color: 'black' }}>|</span> Concert/Festival Celebrity Appearance in Mumbai{' '}
           <span style={{ color: 'black' }}>|</span> Corporate Celebrity Appearance in Mumbai{' '}
@@ -59,12 +59,12 @@ function Tags() {
         </div>
 
 
-        <div className='footer_button' style={{
+        <div className='footer_button' style={{outline:'none', 
             backgroundColor:'black',borderTopLeftRadius:'1.5rem',
     height:'110px',borderTopRightRadius:'1.5rem'}}>
         <center>
-            <button style={{marginTop:'2rem',borderRadius:'2rem',padding:"6px",paddingLeft:'2.5rem',outline:'none',paddingRight:'2.5rem',
-                color:'blue',fontWeight:'500',fontSize:'20px'}}>&#8592; &nbsp; Go Back</button>
+            <button style={{fontFamily: 'Montserrat',outline:'none',marginTop:'2rem',borderRadius:'2rem',padding:"6px",paddingLeft:'2.5rem',outline:'none',paddingRight:'2.5rem',
+                color:'blue',fontWeight:'500',fontSize:'19px'}}>&#8592; &nbsp; Go Back</button>
             </center> 
         </div>
         <img src="public/footer.png" style={{width:'100%',cursor:'pointer'}} alt="" />

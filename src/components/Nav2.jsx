@@ -10,14 +10,14 @@ function Nav() {
         </a>
         <div style={{paddingTop:'0.2rem',fontFamily: 'Montserrat',}}>
           <ul id="navbar">
-            <li>
-            <select style={{padding:'8px 14px ',backgroundColor:'#fff',border:'none',cursor:'pointer',fontSize:'15px',fontWeight:'500',fontFamily: 'Montserrat',}} name="" id="">
-              <option  value="">Entertainers</option>
+            <li style={{marginLeft:'3rem'}}>
+            <select style={{padding:'8px 5px ',backgroundColor:'#fff',border:'none',cursor:'pointer',fontSize:'15px',fontWeight:'500',fontFamily: 'Montserrat',}} name="" id="">
+              <option  value="" >Browse by Category</option>
             </select>
             </li>
             <li>
-            <select style={{padding:'8px 14px ',backgroundColor:'#fff',border:'none',cursor:'pointer',fontSize:'15px',fontFamily: 'Montserrat',fontWeight:'500'}} name="" id="">
-              <option  value="">Join Community</option>
+            <select style={{marginRight:'0rem',padding:'8px 5px ',backgroundColor:'#fff',border:'none',cursor:'pointer',fontSize:'15px',fontFamily: 'Montserrat',fontWeight:'500'}} name="" id="">
+              <option  value="">For Artists</option>
             </select>
             </li>
             <li >

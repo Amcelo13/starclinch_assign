@@ -48,7 +48,7 @@ function Artists() {
         <img src="https://stcdn.starclinch.in/mobile/images/profile/similar_artist_icon_v2.svg" alt="" />
         <p style={{
           marginLeft: '1rem', marginTop: '1rem', color: 'black', fontSize: '20px', paddingTop: '3px',
-          fontWeight: '500', width: "400px"
+          fontWeight: '500', fontFamily: 'Montserrat',width: "400px"
         }}>Similar Artists you may like</p>
       </div>
   
