@@ -1,0 +1,153 @@
+/*Global Styling*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia' ,sans-serif;
+}
+
+h1{
+   font-size: 50px;
+   line-height: 64px;
+   color: #222;
+}
+h2{
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+h4{
+  font-size: 20px;
+  color: #222;
+}
+h6{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0px 20px 0px;
+}
+.section-p1{
+  padding: 40px 80px;
+}
+.section-m1 {
+  margin: 40px 0px;
+
+}
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.normal:hover{
+    box-shadow: rgb(235, 223, 10) 5px 5px 5px ;   
+}
+body{
+  width: 100%;
+}
+
+/*  Header Start*/
+#header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 45px;
+   background: #fff;                            /*Background color for the navigation section */
+   box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.06);   /*Means box-shadow has 0.06 shadow at the bottom*/
+   position: fixed;                               /*For making navbar unmovable on y-axis*/
+   top: 0;
+   width: 100%;
+   left: 0;
+   border-radius:8px;
+   /* margin-bottom: 2rem; */
+}
+
+#navbar { /*Styling Navbar Items*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li{   /*Styling Navbar Items list*/
+  list-style: none;  /*Remove the bullet circles from the icons*/
+  padding: 0px 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;     /*Removes the underline from navbar items*/
+  color: #2c2929;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+#navbar li a:hover ,
+#navbar li a.active{ /*a.active class is also added bcz we want that feature where the color stays on navitem at the page we are currently in*/
+  color: rgb(56, 131, 192);
+}
+#navbar li a.active::after,  /*Home Tab----after clicking the button line emerged*/
+#navbar li a:hover::after{   /*On hovering also the line emerges */
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobile{  
+  display: none;    /*To hide the hamburger menu in PC dimensions*/
+  align-items: center;
+}
+#close{
+  display: none;
+  align-items: center;
+}
+/*  Home Page*/
+#hero {
+  background-image: url("imgca/cover.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 0 right -200px;
+  padding: 0 80px;
+  margin-top: 5rem;
+  display: flex;             /*Justifying content at the center*/
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  animation: slider 15s infinite linear;    /*name durationOFOneAni animation-iteration-count TimerSpeed */
+}
+
+#hero h4{
+  padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+}
+.thi:hover{
+  background-color: white;
+  color: black;
+}
+#hero button{
+  font-size: 30px;
+  font-weight: 600;
+  background-color: transparent;
+  background-image: url("imgca/button.png");
+  border: 0;
+  color: gray;
+  padding: 0 0 0 40px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+      
