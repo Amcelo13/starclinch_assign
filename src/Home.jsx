@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import Bio from './components/Bio'
 import Artists1 from './components/Artists1'
 import Artists from './components/Artists'
+import Tags from './components/Tags'
 function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ function Home() {
       <Bio />
         <Artists/>
         <Artists1 />
+        <Tags/>
     </div>
   )
 }
