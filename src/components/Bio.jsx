@@ -2,6 +2,7 @@ import React,{ useState ,useRef }  from 'react'
 import './Bio.css'
 import './Accordion.css'
 import './Star.css'
+import './adfar.css'
 function Bio() {
 
 
@@ -12,24 +13,24 @@ function Bio() {
     fontWeight: 'bold',
 
   }
-  const stylo1 = {
-    backgroundColor: '#ff214f',
-    color: 'white',
-    borderRadius: '0.7rem',
-    fontWeight: '700',
-    outline: 'none',
-    width: '320px',
-    marginBottom: '3.5rem',
-    padding: '0.8rem 0.8rem ',
-    transition: 'background-color 0.3s ease-out', // Add a transition for a smooth effect
-    // Add the following properties for hover effect
-    ':hover': {
-      backgroundColor: 'white',
-      cursor: 'pointer', // Change the cursor to a pointer to indicate interactivity
-      color: 'black',
-    },
+  // const stylo1 = {
+  //   backgroundColor: '#ff214f',
+  //   color: 'white',
+  //   borderRadius: '0.7rem',
+  //   fontWeight: '700',
+  //   outline: 'none',
+  //   width: '320px',
+  //   marginBottom: '3rem',
+  //   padding: '0.5rem 0.5rem ',
+  //   transition: 'background-color 0.3s ease-out', // Add a transition for a smooth effect
+  //   // Add the following properties for hover effect
+  //   ':hover': {
+  //     backgroundColor: 'white',
+  //     cursor: 'pointer', // Change the cursor to a pointer to indicate interactivity
+  //     color: 'black',
+  //   },
 
-  };
+  // };
   const stylo2 = {
     backgroundColor: '#ff214f',
     color: 'white',
@@ -53,7 +54,7 @@ function Bio() {
   return (<>
 
     <div style={{
-      marginTop: '5.5rem',
+      marginTop: '5.9rem',
       marginLeft: '6rem',
       display: 'flex'
     }}>
@@ -65,17 +66,17 @@ function Bio() {
     <div style={{
       display: 'flex', marginLeft: '6rem', marginTop: '1rem'
     }}>
-      <img src="public\ranbir.png" alt="" width="450px" height="350px"/>
-      <div style={{ marginLeft: '3rem', marginTop: '4rem', marginRight: '5rem' }}>
-        <p style={{ fontSize: '28px', color: 'black', lineHeight: '1.1rem' }}>Ranbir Kapoor</p>
+      <img src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=400&dpr=1.5" alt="" width="420px" height="320px" style={{borderRadius:'1rem'}}/>
+      <div style={{ marginLeft: '3rem', marginTop: '3rem', marginRight: '5rem' }}>
+        <p style={{ fontSize: '24px', color: 'black', lineHeight: '1.1rem' }}>Ranbir Kapoor</p>
         <p style={{ fontSize: '18px', lineHeight: '1rem' }}>(CELEBRITY APPEARANCE)</p>
         <p style={{ fontSize: '16px', lineHeight: '0.5rem', fontWeight: '700', color: 'gray', paddingBottom: '0.8rem' }}>Mumbai, Maharashtra </p>
-        <button style={stylo1} >See Price And Book</button>
-        <p style={{ fontSize: '16px' }}>The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest actors in Bollywood and is a true versatile performer</p>
+        <button className='m1'  >See Price And Book</button>
+        <p style={{ fontSize: '15px' ,marginTop:'-1rem'}}>The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest actors in Bollywood and is a true versatile performer</p>
       </div>
     </div>
     <img style={{ marginLeft: '6rem', paddingTop: '3rem' }} src="public\gallery.png" alt="" width="130px" />
-    <center> <button id='LKJ' style={stylo1} >See Price And Book</button></center>
+    <center> <button className='m1'>See Price And Book</button></center>
 
 
             {/* --------------------------ACCORDIAN------------------------- */}

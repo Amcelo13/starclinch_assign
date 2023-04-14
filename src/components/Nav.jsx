@@ -2,28 +2,13 @@ import React from 'react';
 import './Nav.css';
 
 function Nav() {
-  const stylo = {
-    backgroundColor: '#ff214f',
-    color: 'white',
-    borderRadius: '0.7rem',
-    fontWeight: '550',
-    marginBottom:'-5rem',
-    padding:'5px 18px',
-    outline: 'none',
-    transition: 'background-color 0.3s ease-out',
-    ':hover': {
-      backgroundColor: 'white',
-      cursor: 'pointer',
-      color: 'black',
-    },
-  };
-  
+
   return (
-      <section id="header" style={{zIndex:'5', position:'fixed', boxShadow: "0px 5px 10px -5px rgba(0, 0, 0, 0.5)",marginTop:'0px'}}>
+      <section id="header" style={{zIndex:'5', position:'fixed',boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px',marginTop:'0px'}}>
         <a href="index.html">
-          <img src="public/logo.png" className="logo" alt="" width="170px" height="42px" style={{marginLeft:'3rem'}}/>
+          <img src="public/logo.png" className="logo" alt="" width="170px" height="40px" style={{marginLeft:'3rem'}}/>
         </a>
-        <div style={{paddingTop:'0.3rem'}}>
+        <div style={{paddingTop:'0.2rem'}}>
           <ul id="navbar">
             <li>
             <select style={{padding:'8px 14px ',backgroundColor:'#fff',border:'none',cursor:'pointer',fontSize:'15px',fontWeight:'500'}} name="" id="">
@@ -36,7 +21,7 @@ function Nav() {
             </select>
             </li>
             <li >
-            <button className="thi" style={stylo} >Post Your Requirement</button>
+            <button  id='m2' >Post Your Requirement</button>
             </li>
             <li>
             <i style={{cursor:'pointer',paddingTop:'0.6rem'}} className="fa-solid fa-magnifying-glass"></i>

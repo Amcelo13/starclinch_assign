@@ -7,12 +7,12 @@ import Tags from './components/Tags'
 function Home() {
   return (
     <div>
-        
-        <Nav />
+
+      <Nav />
       <Bio />
-        <Artists/>
-        <Artists1 />
-        <Tags/>
+      <Artists />
+      <Artists1 />
+      <Tags />
     </div>
   )
 }

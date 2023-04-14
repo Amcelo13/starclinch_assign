@@ -1,0 +1,35 @@
+.m1 {
+  background-color: #ff214f;
+  color: white;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  outline: none;
+  width: 320px;
+  margin-bottom: 3rem;
+  padding: 0.5rem 0.5rem;
+  transition: background-color 0.3s ease-out; /* Add a transition for a smooth effect */
+}
+
+.m1:hover {
+  background-color: white;
+  cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
+  color: black;
+  border: 1.5px solid #ff214f;
+}
+
+#m2:hover{
+  background-color: white;
+  cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
+  color: black;
+  border: 1.5px solid #ff214f;
+}
+#m2{
+  background-color: #ff214f;
+  color: white;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  outline: none;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-top: 0.2rem;
+}
