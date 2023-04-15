@@ -2,6 +2,7 @@ import React,{ useState ,useRef }  from 'react'
 import './Bio.css'
 import './Accordion.css'
 import './Star.css'
+import MyWrapper from './MyWrapper';
 import './adfar.css'
 import { useNavigate } from 'react-router-dom'
 function Bio() {
@@ -17,24 +18,7 @@ const handleNavigate = ()=>{
     fontWeight: '800',
 
   }
-  // const stylo1 = {
-  //   backgroundColor: '#ff214f',
-  //   color: 'white',
-  //   borderRadius: '0.7rem',
-  //   fontWeight: '700',
-  //   outline: 'none',
-  //   width: '320px',
-  //   marginBottom: '3rem',
-  //   padding: '0.5rem 0.5rem ',
-  //   transition: 'background-color 0.3s ease-out', // Add a transition for a smooth effect
-  //   // Add the following properties for hover effect
-  //   ':hover': {
-  //     backgroundColor: 'white',
-  //     cursor: 'pointer', // Change the cursor to a pointer to indicate interactivity
-  //     color: 'black',
-  //   },
-
-  // };
+ 
   const stylo2 = {
     backgroundColor: '#ff214f',
     color: 'white',
@@ -80,7 +64,12 @@ const handleNavigate = ()=>{
         <p style={{fontFamily: 'Montserrat', fontSize: '15px' ,marginTop:'-1rem'}}>The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest actors in Bollywood and is a true versatile performer</p>
       </div>
     </div>
-    <img style={{ marginLeft: '6rem', paddingTop: '3rem',cursor:'pointer' }} src="public\gallery.png" alt="" width="130px" />
+    <img style={{ marginLeft: '6rem', paddingTop: '3rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="public\gallery.png" alt="" width="130px" />
+
+    <div style={{borderRadius:'1rem',marginLeft:'6rem',height:'2000px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'6rem'}}>
+    <MyWrapper />
+    </div>
+   
     <center> <button className='m1'onClick={handleNavigate}>See Price And Book</button></center>
 
 
@@ -90,7 +79,7 @@ const handleNavigate = ()=>{
         <h2 className="accordion-header" style={{marginBottom: '1rem  ',paddingBottom:'1rem', height: '55px' ,overflowY:'hidden',marginTop:'-1rem'}}>
           <div style={{ display: 'flex' }}>
             <img src="https://stcdn.starclinch.in/mobile/images/profile/biography_icon.svg" alt="" style={{ paddingLeft: '1rem' }} />
-            <button className="accordion-button " style={{fontFamily: 'Montserrat',fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white'}} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button className="accordion-button " style={{fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white'}} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Biography
             </button>
           </div>
@@ -138,7 +127,7 @@ const handleNavigate = ()=>{
         <h2 className="accordion-header" s style={{ marginBottom: '1rem  ',paddingBottom:'1rem', height: '55px' ,overflowY:'hidden',marginTop:'-1rem'}}>
           <div style={{ display: 'flex' }}>
             <img src="https://starclinch.com/static/mobile/images/profile/review_icon.svg" alt="" style={{ paddingLeft: '1rem', width: '45px' ,height:'80px',paddingTop:'3px'}} />
-            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               Review
             </button>
           </div>

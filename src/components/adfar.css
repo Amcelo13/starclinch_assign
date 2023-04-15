@@ -36,3 +36,20 @@
   margin-top: 0.2rem;
   font-family: 'Montserrat';
 }
+#m3:hover{
+  background-color: blue;
+  cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
+  color: white;
+  /* border: 1.5px solid #ff214f; */
+}
+#m3{
+  background-color: #ff214f;
+  color: white;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  outline: none;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-top: 0.2rem;
+  font-family: 'Montserrat';
+}

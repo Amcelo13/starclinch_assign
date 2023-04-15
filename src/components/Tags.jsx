@@ -63,7 +63,7 @@ function Tags() {
             backgroundColor:'black',borderTopLeftRadius:'1.5rem',
     height:'110px',borderTopRightRadius:'1.5rem'}}>
         <center>
-            <button style={{fontFamily: 'Montserrat',outline:'none',marginTop:'2rem',borderRadius:'2rem',padding:"6px",paddingLeft:'2.5rem',outline:'none',paddingRight:'2.5rem',
+            <button style={{fontFamily: 'Montserrat',marginTop:'2rem',borderRadius:'2rem',padding:"6px",paddingLeft:'2.5rem',outline:'none',paddingRight:'2.5rem',
                 color:'blue',fontWeight:'500',fontSize:'19px'}}>&#8592; &nbsp; Go Back</button>
             </center> 
         </div>
