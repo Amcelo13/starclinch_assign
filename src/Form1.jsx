@@ -1,14 +1,33 @@
 import React, { useState } from 'react'
 import './App.css'
 import './components/adfar.css'
+import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { isValidNumber } from 'libphonenumber-js'
+
 function Form1() {
-  const [phoneNumberError, setPhoneNumberError] = useState('');
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [budget, setBudget] = useState('');
   const [budgetError, setBudgetError] = useState('');
-  const [value, setValue] = useState()
+  const [value, setValue] = useState('')
+  const [phone, setPhone] = useState("");
+  const [error, setError] = useState("");
+
+  const handleValueChange = (newValue) => {
+    setValue(newValue)
+    setIsValid(isValidNumber(newValue))
+
+  }
+
+  const handleOnChange = (value, country) => {
+    if (value.length < 10) {
+      setError("Invalid phone number");
+    } else {
+      setPhone(value);
+      setError("");
+    }
+  };
   const handleBudgetChange = (event) => {
     const value = event.target.value;
     setBudget(value);
@@ -53,7 +72,7 @@ function Form1() {
             <div style={{ display: 'flex' }}>
               <div>
                 <h4>What's the occasion?</h4>
-                <select name="" id="" style={{
+                <select name="" id="gt" style={{
                   outline: 'none', border: '1px solid darkgray', padding: '6px 4px',
                   paddingRight: '130px'
                 }}>
@@ -77,7 +96,7 @@ function Form1() {
               </div>
               <div style={{ marginLeft: '2rem' }}>
                 <h4 >Event Date</h4>
-                <input style={{
+                <input id="gt" style={{
                   outline: 'none', border: '1px solid darkgray', padding: '4.4px 12px',
                   paddingRight: '120px', color: 'darkrgray', backgroundPosition: 'right center', backgroundRepeat: 'no-repeat', backgroundSize: '20px'
                 }} type="date" />
@@ -86,7 +105,7 @@ function Form1() {
             </div>
 
             <h4 style={{ marginTop: '1.5rem' }}>Venue Address </h4>
-            <input type="text" style={{
+            <input type="text" id="gt" style={{
               width: '40rem',
               padding: '4.4px 4.4px', border: '1px solid gray', outline: 'none'
             }} />
@@ -94,7 +113,7 @@ function Form1() {
             <div style={{ display: 'flex', marginTop: '1rem' }}>
               <div>
                 <h4>Budget</h4>
-                <input type='number' min="12500000" value={budget}
+                <input type='number' id="gt" min="12500000" value={budget}
                   onChange={handleBudgetChange} style={{
                     outline: 'none', border: '1px solid darkgray', padding: '6px 4px',
                     paddingRight: '110px'
@@ -103,7 +122,7 @@ function Form1() {
               </div>
               <div style={{ marginLeft: '2rem' }}>
                 <h4 >How Many People will attend?</h4>
-                <input type='number' name="" id="" style={{
+                <input type='number' name="" id="gt" style={{
                   outline: 'none', border: '1px solid darkgray', padding: '6px 4px',
                   paddingRight: '105px'
                 }}>
@@ -114,7 +133,7 @@ function Form1() {
             </div>
 
             <h4 style={{ marginTop: '1.5rem' }}>Full Name</h4>
-            <input type="text" style={{
+            <input type="text" id="gt" style={{
               width: '40rem', border: '1px solid  darkgray',
               padding: '4.4px 4.4px', border: '1px solid gray', outline: 'none'
             }} />
@@ -131,17 +150,18 @@ function Form1() {
               </div>
               <div style={{ marginLeft: '2rem' }} >
                 <h4 >Mobile Number</h4>
-                <PhoneInput id="phone" type="tel" placeholder="Enter phone number" defaultCountry="IN"
+
+                <PhoneInput id="phone" type="tel" placeholder="Phone number" defaultCountry="IN"
                   value={value}
-                  onChange={setValue}  />
-               
+                  onChange={setValue} />
+                {error && <p style={{ color: "red" }}>{error}</p>}
               </div>
 
             </div>
 
             <h4 style={{ marginTop: '1.5rem' }}>Tell us more (we love to listen)</h4>
 
-            <textarea style={{
+            <textarea id="gt" style={{
               width: '40rem',
               padding: '4.4px 4.4px', border: '1px solid gray', outline: 'none'
             }} />
@@ -225,10 +245,11 @@ function Form1() {
         <img src="public/logo1.png" alt="your-image" width="250px" height="60px" style={{ marginLeft: '1rem' }} />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{ color: '#505050', marginRight: '9rem' }}><span style={{ paddingRight: '1rem', marginLeft: '-2rem' }}>On social networks</span>
-            <img src="public/fac.png" alt="your-social-icon-1" width="22px" height="18px" style={{ paddingRight: '0.5rem', marginLeft: '1rem' }} />
-            <img src="public/cart.png" alt="your-social-icon-2" width="22px" height="18px" style={{ paddingRight: '0.5rem', marginLeft: '1rem' }} />
-            <img src="public/cart.png" alt="your-social-icon-3" width="22px" height="18px" style={{ paddingRight: '0.5rem', marginLeft: '1rem' }} />
-            <img src="public/cart.png" alt="your-social-icon-4" width="22px" height="18px" style={{ paddingRight: '0.5rem', marginLeft: '1rem' }} />
+
+            <a target="_blank" href="https://www.facebook.com/starclinchpage/"><i  className="fa-brands fa-square-facebook mun" ></i></a>
+            <a target="_blank" href="https://twitter.com/StarClinch"><i className="fa-brands fa-twitter mun" ></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCQoaiFC4a1VBLZOgBi9Y_bg"><i className="fa-brands fa-youtube mun" ></i></a>
+            <a target="_blank" href="https://www.instagram.com/starclinch/target="> <i className="fa-brands fa-instagram mun" ></i></a>
           </div>
         </div>
       </div>

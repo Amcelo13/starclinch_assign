@@ -116,3 +116,30 @@ input[type="number"]::-webkit-outer-spin-button {
 #rt{
   color: #575554;
 }
+#phone.PhoneInputInput{
+  padding: 6px;
+  margin-top: -1px;
+  padding-right: 3.75rem;
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  outline: none;
+}
+#gt{
+  border-radius: 0.3rem;
+}
+#email{
+  border-radius: 0.3rem;
+}
+#social{
+  color: white;
+  background: none;
+  color-scheme: white;
+}
+.mun{
+  color: #868582 ;
+  padding-right: 0.5rem;
+   margin-left: 1rem;
+}
+.mun:hover{
+  color: white;
+}
