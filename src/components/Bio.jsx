@@ -55,16 +55,16 @@ const handleNavigate = ()=>{
     <div style={{
       display: 'flex', marginLeft: '6rem', marginTop: '1rem'
     }}>
-      <img src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=400&dpr=1.5" alt="" width="420px" height="320px" style={{borderRadius:'1rem'}}/>
-      <div style={{fontFamily: 'Montserrat', marginLeft: '3rem', marginTop: '3rem', marginRight: '5rem' }}>
+      <img src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=400&dpr=1.5" alt="" width="380px" height="300px" style={{borderRadius:'1rem', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' }}/>
+      <div style={{fontFamily: 'Montserrat', marginLeft: '3rem', marginTop: '2.5rem', marginRight: '5rem' }}>
         <p style={{fontFamily: 'Montserrat', fontSize: '24px', color: 'black', lineHeight: '1.1rem',fontWeight:'700' }}>Ranbir Kapoor</p>
         <p style={{fontFamily: 'Montserrat', fontSize: '18px', lineHeight: '1rem' }}>(CELEBRITY APPEARANCE)</p>
         <p style={{ fontSize: '16px', lineHeight: '0.5rem',  color: 'gray', paddingBottom: '0.8rem', fontWeight:'700'}}>Mumbai, Maharashtra </p>
         <button className='m1'onClick={handleNavigate}>See Price And Book</button>
-        <p style={{fontFamily: 'Montserrat', fontSize: '15px' ,marginTop:'-1rem'}}>The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest actors in Bollywood and is a true versatile performer</p>
+        <p style={{fontFamily: 'Montserrat', fontSize: '15px' ,marginTop:'-2rem'}}>The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest actors in Bollywood and is a true versatile performer</p>
       </div>
     </div>
-    <img style={{ marginLeft: '6rem', paddingTop: '3rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="public\gallery.png" alt="" width="130px" />
+    <img style={{ marginLeft: '7rem', paddingTop: '4rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="public\gallery.png" alt="" width="110px" />
 
     <div style={{borderRadius:'1rem',marginLeft:'6rem',height:'2000px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'6rem'}}>
     <MyWrapper />

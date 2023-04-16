@@ -31,7 +31,8 @@ const MyWrapper = () => {
         <img 
           key={i}
           src={image}
-          style={{ width: "100%", display: "block" ,borderRadius:'1rem'}}
+          style={{ width: "100%", display: "block" ,borderRadius:'1rem', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' ,
+        borderRadius:'6px '}}
         />
       ))}
     </div>

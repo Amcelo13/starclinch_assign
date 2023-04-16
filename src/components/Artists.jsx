@@ -56,11 +56,11 @@ function Artists() {
         {/* Show the images */}
         <div className="image-gallery-row">
           {images.slice(currentIndex, currentIndex + 4).map((image, index) => (
-            <img
+            <img 
               key={index}
               className="image-gallery-image"
               src={image.src}
-              alt={image.alt}
+              alt={image.alt} style={{borderRadius:'0.7rem'}}
             />
           ))}
         </div>
