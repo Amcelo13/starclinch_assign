@@ -77,9 +77,42 @@
 input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: 7rem;
   margin-right: -5.8rem;
+
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   /* margin-left: 17rem; */
   margin-right: -6rem;
+}
+
+
+#brand-logos {
+  height: 400px;
+  overflow: hidden;
+}
+
+#brand-logos img {
+  animation: scroll-up 40s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+#qs{
+  color: #505050;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+#qs:hover{
+  text-decoration: underline;
+  color: #868582;
+}
+#rt{
+  color: #575554;
 }

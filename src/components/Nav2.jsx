@@ -23,13 +23,8 @@ function Nav() {
             <li >
             <button  id='m2' >Post Your Requirement</button>
             </li>
-            <li>
-            <i style={{cursor:'pointer',paddingTop:'0.6rem',color:'gray'}} className="fa-solid fa-magnifying-glass"></i>
-            </li> 
-            <li>
-              <a id="lg-bag" href="/">
-              <img src="public/cart.png" alt="" height="28px" style={{paddingTop:'-1rem',marginBottom:'0px',width:'17px',height:'22px'}}/> </a>
-            </li>
+          
+           
           </ul>
         </div>
       </section>
