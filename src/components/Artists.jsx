@@ -3,14 +3,14 @@ import './Artists.css'
 function Artists() {
 
   const [images, setImages] = useState([
-    { src: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80", alt: "Image 1" },
-    { src: "https://images.unsplash.com/photo-1664448027922-f017a91ff392?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60", alt: "Image 2" },
-    { src: "image3.jpg", alt: "Image 3" },
-    { src: "image4.jpg", alt: "Image 4" },
-    { src: "image5.jpg", alt: "Image 5" },
-    { src: "image6.jpg", alt: "Image 6" },
-    { src: "image7.jpg", alt: "Image 7" },
-    { src: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80", alt: "Image 8" },
+    { src: "src/assets/1.png", alt: "Image 1" },
+    { src: "src/assets/2.png", alt: "Image 2" },
+    { src: "src/assets/3.png", alt: "Image 3" },
+    { src: "src/assets/4.png", alt: "Image 4" },
+    { src: "src/assets/3.png", alt: "Image 5" },
+    { src: "src/assets/4.png", alt: "Image 6" },
+    { src: "src/assets/5.png", alt: "Image 7" },
+    { src: "src/assets/6.png", alt: "Image 8" },
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeDotIndex, setActiveDotIndex] = useState(0);
@@ -60,7 +60,7 @@ function Artists() {
               key={index}
               className="image-gallery-image"
               src={image.src}
-              alt={image.alt} style={{borderRadius:'0.7rem'}}
+              alt={image.alt} style={{borderRadius:'0.7rem',height:'15rem',cursor:'pointer'}}
             />
           ))}
         </div>

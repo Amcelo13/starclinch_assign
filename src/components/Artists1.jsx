@@ -4,22 +4,22 @@ import './SD1.css';
 function Artists() {
 
   const [images, setImages] = useState([
-    { src: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80", alt: "Image 1" },
-    { src: "https://images.unsplash.com/photo-1664448027922-f017a91ff392?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60", alt: "Image 2" },
-    { src: "image3.jpg", alt: "Image 3" },
-    { src: "image4.jpg", alt: "Image 4" },
-    { src: "image5.jpg", alt: "Image 5" },
-    { src: "image6.jpg", alt: "Image 6" },
-    { src: "image7.jpg", alt: "Image 7" },
-    { src: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80", alt: "Image 8" },
-    { src: "image9.jpg", alt: "Image 9" },
-    { src: "image10.jpg", alt: "Image 10" },
-    { src: "image11.jpg", alt: "Image 11" },
-    { src: "image12.jpg", alt: "Image 12" },
-    { src: "image13.jpg", alt: "Image 13" },
-    { src: "image14.jpg", alt: "Image 14" },
-    { src: "image15.jpg", alt: "Image 15" },
-    { src: "image16.jpg", alt: "Image 16" }
+    { src: "src/assets/a.png", alt: "Image 1" },
+    { src: "src/assets/b.png", alt: "Image 2" },
+    { src: "src/assets/c.png", alt: "Image 3" },
+    { src: "src/assets/d.png", alt: "Image 4" },
+    { src: "src/assets/e.png", alt: "Image 5" },
+    { src: "src/assets/f.png", alt: "Image 6" },
+    { src: "src/assets/g.png", alt: "Image 7" },
+    { src: "src/assets/h.png", alt: "Image 8" },
+    { src: "src/assets/i.png", alt: "Image 9" },
+    { src: "src/assets/j.png", alt: "Image 10" },
+    { src: "src/assets/k.png", alt: "Image 11" },
+    { src: "src/assets/l.png", alt: "Image 12" },
+    { src: "src/assets/k.png", alt: "Image 13" },
+    { src: "src/assets/l.png", alt: "Image 14" },
+    { src: "src/assets/m.png", alt: "Image 15" },
+    { src: "src/assets/n.png", alt: "Image 16" }
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -67,7 +67,7 @@ function Artists() {
               key={index}
               className="image-gallery-image"
               src={image.src}
-              alt={image.alt} style={{borderRadius:'0.7rem'}}
+              alt={image.alt} style={{borderRadius:'0.7rem' ,height:'17rem',cursor:'pointer'}}
             />
           ))}
         </div>

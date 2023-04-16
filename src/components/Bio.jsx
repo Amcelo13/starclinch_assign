@@ -70,7 +70,7 @@ const handleNavigate = ()=>{
     <MyWrapper />
     </div>
    
-    <center> <button className='m1'onClick={handleNavigate}>See Price And Book</button></center>
+    <center> <button className='m11'onClick={handleNavigate}>See Price And Book</button></center>
 
 
             {/* --------------------------ACCORDIAN------------------------- */}

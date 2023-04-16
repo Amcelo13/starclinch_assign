@@ -56,3 +56,23 @@
   margin-top: 0.2rem;
   font-family: 'Montserrat';
 }
+.m11 {
+  background-color: #ff214f;
+  color: white;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  outline: none;
+  width: 280px;
+  font-family: 'Montserrat';
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  padding: 0.35rem 0.25rem;
+  transition: background-color 0.3s ease-out; /* Add a transition for a smooth effect */
+}
+
+.m11:hover {
+  background-color: white;
+  cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
+  color: black;
+  border: 1.5px solid #ff214f;
+}
