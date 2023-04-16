@@ -1,7 +1,36 @@
 import React, { useState } from 'react'
 import './App.css'
 import './components/adfar.css'
+import PhoneInput from 'react-phone-number-input'
 function Form1() {
+  const [phoneNumberError, setPhoneNumberError] = useState('');
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [budget, setBudget] = useState('');
+  const [budgetError, setBudgetError] = useState('');
+  const [value, setValue] = useState()
+  const handleBudgetChange = (event) => {
+    const value = event.target.value;
+    setBudget(value);
+    if (value < 12500000) {
+      setBudgetError('Budget must be at least 12500000');
+    } else {
+      setBudgetError('');
+    }
+  };
+
+  const handleEmailChange = (event) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailValue = event.target.value;
+
+    if (emailRegex.test(emailValue)) {
+      setEmail(emailValue);
+      setEmailError('');
+    } else {
+      setEmail('');
+      setEmailError('Please enter a valid email address');
+    }
+  };
 
   return (<>
     <div style={{ marginTop: '8rem', display: 'flex', marginLeft: '5rem', marginRight: '4.5rem' }}>
@@ -65,12 +94,12 @@ function Form1() {
             <div style={{ display: 'flex', marginTop: '1rem' }}>
               <div>
                 <h4>Budget</h4>
-                <input type='number' min="12500000" name="" id="" style={{
-                  outline: 'none', border: '1px solid darkgray', padding: '6px 4px',
-                  paddingRight: '110px'
-                }}>
-
-                </input>
+                <input type='number' min="12500000" value={budget}
+                  onChange={handleBudgetChange} style={{
+                    outline: 'none', border: '1px solid darkgray', padding: '6px 4px',
+                    paddingRight: '110px'
+                  }} />
+                {budgetError && <p style={{ color: 'red' }}>{budgetError}</p>}
               </div>
               <div style={{ marginLeft: '2rem' }}>
                 <h4 >How Many People will attend?</h4>
@@ -86,7 +115,7 @@ function Form1() {
 
             <h4 style={{ marginTop: '1.5rem' }}>Full Name</h4>
             <input type="text" style={{
-              width: '40rem',
+              width: '40rem', border: '1px solid  darkgray',
               padding: '4.4px 4.4px', border: '1px solid gray', outline: 'none'
             }} />
             <div style={{ display: 'flex', marginTop: '1rem' }}>
@@ -96,18 +125,16 @@ function Form1() {
                 <input type="email" id="email" name="email" style={{
                   outline: 'none', border: '1px solid darkgray', padding: '6px 4px',
                   paddingRight: '110px'
-                }}>
+                }} onChange={handleEmailChange} />
 
-                </input>
+                {emailError && <p style={{ color: 'red', fontSize: '0.8rem' }}>{emailError}</p>}
               </div>
-              <div style={{ marginLeft: '2rem' }}>
+              <div style={{ marginLeft: '2rem' }} >
                 <h4 >Mobile Number</h4>
-                <input type='number' name="" id="" style={{
-                  outline: 'none', border: '1px solid darkgray', padding: '6px 4px',
-                  paddingRight: '105px'
-                }}>
-
-                </input>
+                <PhoneInput id="phone" type="tel" placeholder="Enter phone number" defaultCountry="IN"
+                  value={value}
+                  onChange={setValue}  />
+               
               </div>
 
             </div>
@@ -124,7 +151,7 @@ function Form1() {
                 <select name="" id="" style={{
                   backgroundColor: 'white', border: '0.5px solid darkgray', borderRadius: '0.3rem',
                   outline: 'none', border: '1px solid darkgray', padding: '10px 4px',
-                  paddingRight: '130px'
+                  paddingRight: '10px'
                 }}>
                   <option value="">Yes</option>
                   <option value="">Don't</option>
@@ -147,7 +174,7 @@ function Form1() {
 
         width: '420px', height: '120px', marginTop: '2.5rem', marginLeft: '3.5rem', borderRadius: '1rem'
       }}>
-        <div class="toggle-switch" style={{ marginLeft: '4rem', marginTop: '1rem' }}>
+        <div class="toggle-switch" style={{ marginLeft: '2rem', marginTop: '1rem' }}>
           <input class="toggle-input" id="toggle" type="checkbox" />
           <label class="toggle-label" for="toggle"></label>
           <p style={{
@@ -162,7 +189,7 @@ function Form1() {
     </div>
 
     {/* STARCLINCH AD */}
-    <div style={{ display: 'flex', marginTop: '5rem', marginLeft: '6.5rem', marginRight: '4.5rem', marginBottom: '3rem' }}>
+    <div style={{ display: 'flex', marginTop: '10rem', marginLeft: '6.5rem', marginRight: '4.5rem', marginBottom: '3rem' }}>
       <div style={{ flex: 1, lineHeight: '1rem' }}>
         <div style={{ width: '420px' }}>
           <h3 style={{ paddingBottom: '1rem' }}>Why StarClinch</h3>
