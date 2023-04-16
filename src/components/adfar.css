@@ -4,11 +4,11 @@
   border-radius: 0.7rem;
   font-weight: 700;
   outline: none;
-  width: 320px;
+  width: 280px;
   font-family: 'Montserrat';
   margin-bottom: 3rem;
 
-  padding: 0.5rem 0.5rem;
+  padding: 0.3rem 0.2rem;
   transition: background-color 0.3s ease-out; /* Add a transition for a smooth effect */
 }
 
@@ -31,10 +31,13 @@
   border-radius: 0.7rem;
   font-weight: 700;
   outline: none;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   margin-top: 0.2rem;
+  font-size: 14px;
+  margin-right: 3rem;
   font-family: 'Montserrat';
+  font-weight: 600;
 }
 #m3:hover{
   background-color: blue;
