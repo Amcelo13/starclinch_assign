@@ -11,11 +11,13 @@
   "dependencies": {
     "@heroicons/react": "^2.0.17",
     "libphonenumber-js": "^1.10.26",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-masonry-infinite": "^1.2.2",
     "react-phone-number-input": "^3.2.19",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "react-scroll": "^1.8.9"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

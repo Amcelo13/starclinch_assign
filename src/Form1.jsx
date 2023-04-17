@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import './components/adfar.css'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { isValidNumber } from 'libphonenumber-js'
 import './native.css'
+import { animateScroll } from 'react-scroll';
 
 function Form1() {
-  
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [budget, setBudget] = useState('');
@@ -15,6 +15,7 @@ function Form1() {
   const [value, setValue] = useState('')
   const [phone, setPhone] = useState("");
   const [error, setError] = useState("");
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   const handleValueChange = (newValue) => {
     setValue(newValue)
@@ -53,10 +54,40 @@ function Form1() {
     }
   };
 
-  return (<>
-    <div style={{ marginTop: '8rem', display: 'flex', marginLeft: '5rem', marginRight: '4.5rem' }}>
+  //condition where the scroll up button appears
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= window.innerHeight/10) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
 
-      <div id='form__container' style={{ width: '1000px', marginTop: '2rem' }}>
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  //scroll top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+  return (<>
+    {showScrollButton && (
+            <button onClick={scrollToTop} className="scroll-to-top-button">
+              <i className="fa fa-chevron-up hadid"></i>
+            </button>
+          )}
+
+    <div style={{ marginTop: '8rem', display: 'flex', marginLeft: '5rem', marginRight: '4.5rem' }}>
+      
+      <div id='form__container' style={{ width: '1000px', marginTop: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <img style={{ borderRadius: '50%' }} height="100px" src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=300&dpr=1.5" width="110px" alt="" />
           <h3 style={{ width: '100px', paddingLeft: '1rem' }}>Ranbir Kapoor</h3>
@@ -70,6 +101,8 @@ function Form1() {
 
         {/* FORM STARTS  */}
         <div style={{ height: '550px', marginLeft: '4rem', marginTop: '2rem' }}>
+        
+        
           <form action="">
             <div style={{ display: 'flex' }}>
               <div>
@@ -194,7 +227,7 @@ function Form1() {
       <div id="wtsp" style={{
         backgroundColor: '#f8f8f8', boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
 
-        width: '420px', height: '120px', marginTop: '2.5rem', marginLeft: '3.5rem', borderRadius: '1rem'
+        width: '420px', height: '120px', marginTop: '0.8rem', marginLeft: '2rem', borderRadius: '1rem', marginRight: '3rem'
       }}>
         <div class="toggle-switch" style={{ marginLeft: '2rem', marginTop: '1rem' }}>
           <input class="toggle-input" id="toggle" type="checkbox" />
@@ -223,7 +256,7 @@ function Form1() {
         </div>
       </div>
       <div style={{ flex: 1 }}>
-        <h3  id="cd">Brands we've worked with</h3>
+        <h3 id="cd">Brands we've worked with</h3>
         <div id='brand-logos'>
           <img width="500px" src="https://stcdn.starclinch.in/images/home/our_brand_logos_new.svg" alt="" />
         </div>
@@ -248,7 +281,7 @@ function Form1() {
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{ color: '#505050', marginRight: '9rem' }}><span style={{ paddingRight: '1rem', marginLeft: '-2rem' }}>On social networks</span>
 
-            <a target="_blank" href="https://www.facebook.com/starclinchpage/"><i  className="fa-brands fa-square-facebook mun" ></i></a>
+            <a target="_blank" href="https://www.facebook.com/starclinchpage/"><i className="fa-brands fa-square-facebook mun" ></i></a>
             <a target="_blank" href="https://twitter.com/StarClinch"><i className="fa-brands fa-twitter mun" ></i></a>
             <a target="_blank" href="https://www.youtube.com/channel/UCQoaiFC4a1VBLZOgBi9Y_bg"><i className="fa-brands fa-youtube mun" ></i></a>
             <a target="_blank" href="https://www.instagram.com/starclinch/target="> <i className="fa-brands fa-instagram mun" ></i></a>
