@@ -67,7 +67,7 @@ function Artists() {
               key={index}
               className="image-gallery-image"
               src={image.src}
-              alt={image.alt} style={{borderRadius:'0.7rem' ,height:'17rem',cursor:'pointer'}}
+              alt={image.alt} style={{borderRadius:'0.7rem' ,height:'18rem',cursor:'pointer'}}
             />
           ))}
         </div>
