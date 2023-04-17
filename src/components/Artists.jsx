@@ -3,14 +3,14 @@ import './Artists.css'
 function Artists() {
 
   const [images, setImages] = useState([
-    { src: "public/assets/1.png", alt: "Image 1" },
-    { src: "public/assets/2.png", alt: "Image 2" },
-    { src: "public/assets/3.png", alt: "Image 3" },
-    { src: "public/assets/4.png", alt: "Image 4" },
-    { src: "public/assets/3.png", alt: "Image 5" },
-    { src: "public/assets/4.png", alt: "Image 6" },
-    { src: "public/assets/5.png", alt: "Image 7" },
-    { src: "public/assets/6.png", alt: "Image 8" },
+    { src: "https://i.pinimg.com/564x/c7/eb/5c/c7eb5ccaaaa03e3e508b51a3409b173a.jpg", alt: "Image 1" },
+    { src: "https://i.pinimg.com/originals/cd/59/26/cd59267abeffbea76c71e33b1bd53e66.png", alt: "Image 2" },
+    { src: "https://i.pinimg.com/originals/94/c4/90/94c490317098ea4a36c651da4a5f9101.png", alt: "Image 3" },
+    { src: "https://i.pinimg.com/originals/42/20/3f/42203f9e6037f827535bcf067c77af00.png", alt: "Image 4" },
+    { src: "https://i.pinimg.com/originals/94/c4/90/94c490317098ea4a36c651da4a5f9101.png", alt: "Image 5" },
+    { src: "https://i.pinimg.com/originals/42/20/3f/42203f9e6037f827535bcf067c77af00.png", alt: "Image 6" },
+    { src: "https://i.pinimg.com/originals/db/32/4d/db324d677c76d2963d49d04f9d6e0bd6.png", alt: "Image 7" },
+    { src: "https://i.pinimg.com/originals/92/28/ed/9228edee1448f1e6742b9b82124a2186.png", alt: "Image 8" },
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeDotIndex, setActiveDotIndex] = useState(0);
