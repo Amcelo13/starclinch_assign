@@ -4,22 +4,22 @@ import './SD1.css';
 function Artists() {
 
   const [images, setImages] = useState([
-    { src: "src/assets/a.png", alt: "Image 1" },
-    { src: "src/assets/b.png", alt: "Image 2" },
-    { src: "src/assets/c.png", alt: "Image 3" },
-    { src: "src/assets/d.png", alt: "Image 4" },
-    { src: "src/assets/e.png", alt: "Image 5" },
-    { src: "src/assets/f.png", alt: "Image 6" },
-    { src: "src/assets/g.png", alt: "Image 7" },
-    { src: "src/assets/h.png", alt: "Image 8" },
-    { src: "src/assets/i.png", alt: "Image 9" },
-    { src: "src/assets/j.png", alt: "Image 10" },
-    { src: "src/assets/k.png", alt: "Image 11" },
-    { src: "src/assets/l.png", alt: "Image 12" },
-    { src: "src/assets/k.png", alt: "Image 13" },
-    { src: "src/assets/l.png", alt: "Image 14" },
-    { src: "src/assets/m.png", alt: "Image 15" },
-    { src: "src/assets/n.png", alt: "Image 16" }
+    { src: "public/assets/a.png", alt: "Image 1" },
+    { src: "public/assets/b.png", alt: "Image 2" },
+    { src: "public/assets/c.png", alt: "Image 3" },
+    { src: "public/assets/d.png", alt: "Image 4" },
+    { src: "public/assets/e.png", alt: "Image 5" },
+    { src: "public/assets/f.png", alt: "Image 6" },
+    { src: "public/assets/g.png", alt: "Image 7" },
+    { src: "public/assets/h.png", alt: "Image 8" },
+    { src: "public/assets/i.png", alt: "Image 9" },
+    { src: "public/assets/j.png", alt: "Image 10" },
+    { src: "public/assets/k.png", alt: "Image 11" },
+    { src: "public/assets/l.png", alt: "Image 12" },
+    { src: "public/assets/k.png", alt: "Image 13" },
+    { src: "public/assets/l.png", alt: "Image 14" },
+    { src: "public/assets/m.png", alt: "Image 15" },
+    { src: "public/assets/n.png", alt: "Image 16" }
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);

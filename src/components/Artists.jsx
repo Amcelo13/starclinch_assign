@@ -3,14 +3,14 @@ import './Artists.css'
 function Artists() {
 
   const [images, setImages] = useState([
-    { src: "src/assets/1.png", alt: "Image 1" },
-    { src: "src/assets/2.png", alt: "Image 2" },
-    { src: "src/assets/3.png", alt: "Image 3" },
-    { src: "src/assets/4.png", alt: "Image 4" },
-    { src: "src/assets/3.png", alt: "Image 5" },
-    { src: "src/assets/4.png", alt: "Image 6" },
-    { src: "src/assets/5.png", alt: "Image 7" },
-    { src: "src/assets/6.png", alt: "Image 8" },
+    { src: "public/assets/1.png", alt: "Image 1" },
+    { src: "public/assets/2.png", alt: "Image 2" },
+    { src: "public/assets/3.png", alt: "Image 3" },
+    { src: "public/assets/4.png", alt: "Image 4" },
+    { src: "public/assets/3.png", alt: "Image 5" },
+    { src: "public/assets/4.png", alt: "Image 6" },
+    { src: "public/assets/5.png", alt: "Image 7" },
+    { src: "public/assets/6.png", alt: "Image 8" },
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeDotIndex, setActiveDotIndex] = useState(0);

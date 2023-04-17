@@ -49,7 +49,7 @@ const MyWrapper = () => {
   return (
     <>
       <div
-        style={{
+        style={{cursor:'pointer',
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",
           gap: "10px",

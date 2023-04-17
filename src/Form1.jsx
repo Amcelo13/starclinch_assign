@@ -61,7 +61,7 @@ function Form1() {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', marginTop: '3rem' }}>
-          <img style={{ borderRadius: '50%' }} height="40px" src="public\star.png" width="45px" alt="" />
+          <img style={{ borderRadius: '50%' }} height="40px" src="https://i.ibb.co/mrKXjs2/E29888-C4-CFC8-41681710209-7251081-Fv-TVGH.jpg" width="45px" alt="" />
           <h3 style={{ width: '400px', paddingLeft: '1rem', marginBottom: '-0.2rem' }}>Submit Form</h3>
         </div>
         <h4 style={{ marginLeft: '3.1rem', width: '400px', paddingLeft: '1rem', fontWeight: '500' }}>Get Best Price</h4>
@@ -213,11 +213,11 @@ function Form1() {
       <div style={{ flex: 1, lineHeight: '1rem' }}>
         <div style={{ width: '420px' }}>
           <h3 style={{ paddingBottom: '1rem' }}>Why StarClinch</h3>
-          <p><img src="public/tick.png" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px', }} /> Reliable Booking Partner - 10K+ bookings in the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  last 8 years</p>
-          <p><img src="public/tick.png" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> ONLY VC funded Entertainment startup</p>
-          <p><img src="public/tick.png" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> Follow ESCROW model</p>
-          <p><img src="public/tick.png" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> Leverage the TECH; Hence, don't overcharge</p>
-          <p><img src="public/tick.png" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> Specialized in CORPORATE Events</p>
+          <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px', }} /> Reliable Booking Partner - 10K+ bookings in the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  last 8 years</p>
+          <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> ONLY VC funded Entertainment startup</p>
+          <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> Follow ESCROW model</p>
+          <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> Leverage the TECH; Hence, don't overcharge</p>
+          <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> Specialized in CORPORATE Events</p>
         </div>
       </div>
       <div style={{ flex: 1 }}>
@@ -242,7 +242,7 @@ function Form1() {
           color: '#505050', paddingLeft: '7rem', textAlign: 'center',
           fontSize: '13px'
         }}>India's Largest Marketplace for Professional Artists</p></div>
-        <img src="public/logo1.png" alt="your-image" width="250px" height="60px" style={{ marginLeft: '1rem' }} />
+        <img src="https://i.pinimg.com/originals/f7/e6/e4/f7e6e413e682ce5ac29d1f5590d0aee0.jpg" alt="your-image" width="250px" height="60px" style={{ marginLeft: '1rem' }} />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{ color: '#505050', marginRight: '9rem' }}><span style={{ paddingRight: '1rem', marginLeft: '-2rem' }}>On social networks</span>
 
