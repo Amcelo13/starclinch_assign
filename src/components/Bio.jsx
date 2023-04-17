@@ -64,7 +64,7 @@ const handleNavigate = ()=>{
         <p style={{fontFamily: 'Montserrat', fontSize: '15px' ,marginTop:'-2rem'}}>The 'ROCKSTAR' who is a heart throb of millions, Ranbir Kapoor is one of the finest actors in Bollywood and is a true versatile performer</p>
       </div>
     </div>
-    <img style={{ marginLeft: '7rem', paddingTop: '4rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="public\gallery.png" alt="" width="110px" />
+    <img style={{ marginLeft: '7rem', paddingTop: '4rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="https://i.ibb.co/bb3vcSk/gallery.png" alt="" width="110px" />
 
     <div style={{borderRadius:'1rem',marginLeft:'6rem',height:'2000px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'6rem'}}>
     <MyWrapper />
@@ -102,7 +102,7 @@ const handleNavigate = ()=>{
         </h2>
         <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div className="accordion-body" style={{ fontSize: '16px', fontWeight: '100', marginTop: '0.8rem' }}>
-            <img src="public\performance.png" alt="" width="1000px" style={{ marginLeft: '2rem' }} />
+            <img src="https://i.pinimg.com/originals/47/f7/03/47f7033f41f7f0d17dd167c0363d090c.jpg" alt="" width="1000px" style={{ marginLeft: '2rem' }} />
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ const handleNavigate = ()=>{
         </h2>
         <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div className="accordion-body" style={{ fontSize: '16px', fontWeight: '100', marginTop: '0.8rem' }}>
-            <img src="public\lang.png" alt="" width="1000px" style={{ marginLeft: '1.5rem' }} />
+            <img src="https://i.pinimg.com/originals/48/2a/13/482a1331d1c8b59d589551e20024061c.jpg" alt="" width="1000px" style={{ marginLeft: '1.5rem' }} />
           </div>
         </div>
       </div>

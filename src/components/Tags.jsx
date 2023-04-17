@@ -67,7 +67,7 @@ function Tags() {
                 color:'blue',fontWeight:'500',fontSize:'19px'}}>&#8592; &nbsp; Go Back</button>
             </center> 
         </div>
-        <img src="public/footer.png" style={{width:'100%',cursor:'pointer'}} alt="" />
+        <img src="https://i.pinimg.com/originals/98/42/dd/9842dd15c37f39060ab371426d837084.jpg" style={{width:'100%',cursor:'pointer'}} alt="" />
     </>
     )
 }

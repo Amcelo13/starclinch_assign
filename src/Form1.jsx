@@ -4,8 +4,10 @@ import './components/adfar.css'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { isValidNumber } from 'libphonenumber-js'
+import './native.css'
 
 function Form1() {
+  
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [budget, setBudget] = useState('');
@@ -212,7 +214,7 @@ function Form1() {
     <div style={{ display: 'flex', marginTop: '10rem', marginLeft: '6.5rem', marginRight: '4.5rem', marginBottom: '3rem' }}>
       <div style={{ flex: 1, lineHeight: '1rem' }}>
         <div style={{ width: '420px' }}>
-          <h3 style={{ paddingBottom: '1rem' }}>Why StarClinch</h3>
+          <h3 id="cd" style={{ paddingBottom: '1rem' }}>Why StarClinch</h3>
           <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px', }} /> Reliable Booking Partner - 10K+ bookings in the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  last 8 years</p>
           <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> ONLY VC funded Entertainment startup</p>
           <p><img src="https://i.ibb.co/QXhdXRT/024-C4140-C1-C3-41681710215-246045jyq662.jpg" alt="your-image" width="15px" height="16px" style={{ marginRight: '5px' }} /> Follow ESCROW model</p>
@@ -221,7 +223,7 @@ function Form1() {
         </div>
       </div>
       <div style={{ flex: 1 }}>
-        <h3>Brands we've worked with</h3>
+        <h3  id="cd">Brands we've worked with</h3>
         <div id='brand-logos'>
           <img width="500px" src="https://stcdn.starclinch.in/images/home/our_brand_logos_new.svg" alt="" />
         </div>
