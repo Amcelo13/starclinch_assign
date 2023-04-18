@@ -1,9 +1,9 @@
 .image-gallery {
-  width: 1000px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 11rem;
+  margin-left: 6rem;
 }
 
 .image-gallery-row {
