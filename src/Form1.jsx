@@ -332,7 +332,7 @@ function Form1() {
     </div>
     <div style={{ backgroundColor: '#1c1c1c', marginTop: '-1rem', height: '100px' }}>
       <center ><p style={{
-        width: '1000px', fontSize: '14px', color: '#505050', borderTop: '1px solid #505050',
+        width: '1000px', fontSize: '12px', color: '#505050', borderTop: '1px solid #505050',
         paddingTop: '1.5rem', marginBottom: '4rem'
       }}>© Copyright 2015-2023 | VINSM Globe Pvt. Ltd. | All Rights Reserved.
       </p></center>
