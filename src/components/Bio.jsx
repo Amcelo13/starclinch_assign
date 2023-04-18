@@ -42,10 +42,11 @@ const handleNavigate = ()=>{
   return (<>
 
     <div style={{
-      marginTop: '5.9rem',
+      marginTop: '4.5rem',
       marginLeft: '6rem',
       display: 'flex',
       fontFamily: 'Montserrat',
+      paddingTop:'1rem'
     }}>
       <a href='/' className='rbui' style={stylo}>Home</a>
       <a href='/' className='rbui' style={stylo}>CELEBRITY APPEARANCE </a>
@@ -74,7 +75,7 @@ const handleNavigate = ()=>{
 
 
             {/* --------------------------ACCORDIAN------------------------- */}
-    <div className="accordion" id="accordionExample" style={{fontFamily: 'Montserrat'}}>
+    <div className="accordion" id="accordionExample" style={{fontFamily: 'Montserrat' }}>
       <div className="accordion-item" style={{ marginBottom: '1.2rem', width: '1100px', marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' }}>
         <h2 className="accordion-header" style={{marginBottom: '1rem  ',paddingBottom:'1rem', height: '55px' ,overflowY:'hidden',marginTop:'-1rem'}}>
           <div style={{ display: 'flex' }}>

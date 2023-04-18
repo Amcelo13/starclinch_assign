@@ -85,7 +85,7 @@ function Form1() {
             </button>
           )}
 
-    <div style={{ marginTop: '8rem', display: 'flex', marginLeft: '5rem', marginRight: '4.5rem' }}>
+    <div style={{paddingTop:'2rem' ,marginTop: '4rem', display: 'flex', marginLeft: '5rem', marginRight: '4.5rem' }}>
       
       <div id='form__container' style={{ width: '1000px', marginTop: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
