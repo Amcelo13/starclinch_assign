@@ -203,7 +203,7 @@ function Form1() {
 
             <div style={{ display: 'flex', paddingTop: '1rem', borderBottom: '1px solid darkgray', paddingBottom: '1.5rem' }}>
               <div>
-                <select name="" id="" style={{
+                <select name="" id="" style={{color:'black', 
                   backgroundColor: 'white', border: '0.5px solid darkgray', borderRadius: '0.3rem',
                   outline: 'none', border: '1px solid darkgray', padding: '10px 4px',
                   paddingRight: '10px'
