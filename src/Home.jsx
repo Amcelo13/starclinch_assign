@@ -9,10 +9,10 @@ function Home() {
     <div>
 
       <Nav />
-      <Bio />
-      <Artists />
-      <Artists1 />
-      <Tags />
+      <Bio style={{maxWidth:"100vw"}}/>
+      <Artists style={{maxWidth:"100vw"}}/>
+      <Artists1 style={{maxWidth:"100vw"}}/>
+      <Tags style={{maxWidth:"100vw"}}/>
     </div>
   )
 }
