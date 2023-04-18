@@ -66,7 +66,7 @@ const handleNavigate = ()=>{
     </div>
     <img style={{ marginLeft: '7rem', paddingTop: '4rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="https://i.ibb.co/bb3vcSk/gallery.png" alt="" width="110px" />
 
-    <div style={{borderRadius:'1rem',marginLeft:'6rem',height:'2000px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'6rem'}}>
+    <div style={{borderRadius:'1rem',marginLeft:'6rem',height:'auto',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'6rem',paddingBottom:'1.2rem'}}>
     <MyWrapper />
     </div>
    
