@@ -71,7 +71,7 @@ function Artists() {
       <Slider {...settings } style={{marginBottom:'5rem',width:'1100px',marginLeft:'7rem'}}>
         {images.map((image, index) => (
           <div key={index}>
-            <img className="image-gallery-image"  src={image.src} alt={image.alt} style={{ borderRadius: '0.7rem', height: '18rem', cursor: 'pointer' ,
+            <img className="image-gallery-image"  src={image.src} alt={image.alt} style={{ borderRadius: '0.7rem', height: '19rem', cursor: 'pointer' ,
           marginBottom:'1rem'}} />
           </div>
         ))}
