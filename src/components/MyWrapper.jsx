@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const MyWrapper = () => {
   const images = [
@@ -25,6 +25,7 @@ const MyWrapper = () => {
   ];
 
   const [currentModalIndex, setCurrentModalIndex] = useState(0);
+  const [prevModalIndex, setPrevModalIndex] = useState(images.length - 1);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = (index) => {
@@ -37,15 +38,32 @@ const MyWrapper = () => {
   };
 
   const nextModal = () => {
+    setPrevModalIndex(currentModalIndex);
     setCurrentModalIndex((currentModalIndex + 1) % images.length);
   };
 
   const prevModal = () => {
+    setPrevModalIndex(currentModalIndex);
     setCurrentModalIndex(
       (currentModalIndex - 1 + images.length) % images.length
     );
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (isModalOpen) {
+        if (event.key === "ArrowLeft") {
+          prevModal();
+        } else if (event.key === "ArrowRight") {
+          nextModal();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {  
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isModalOpen]);
   return (
     <>
       <div

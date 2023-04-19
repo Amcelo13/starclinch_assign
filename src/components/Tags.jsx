@@ -4,7 +4,7 @@ function Tags() {
     return (<>
         <div style={{
             marginTop: '3rem',
-            marginBottom: '2.5rem', marginLeft: '6rem',
+            marginBottom: '2.5rem', marginLeft: '6.5rem',
             marginRight: '6rem', height: '380px', borderRadius: '1rem', boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px', position: 'relative'
         }}>
             <center>

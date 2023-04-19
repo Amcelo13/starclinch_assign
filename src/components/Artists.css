@@ -42,3 +42,7 @@
 .image-gallery-dot.active {
   background-color: gray;
 }
+.slick-dots li button:before {
+  font-size: 10px;
+  margin-left: -1rem;
+}

@@ -1,5 +1,8 @@
-import { useState } from 'react';
-import './SD1.css';
+import React, { useState } from 'react';
+import Slider from 'react-slick';
+// import './SD1.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Artists() {
 
@@ -22,70 +25,57 @@ function Artists() {
     { src: "https://i.pinimg.com/originals/b3/25/08/b325088a1504a6ea909c3f7bd4fee139.png", alt: "Image 16" }
   ]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [activeDotIndex, setActiveDotIndex] = useState(0);
-
-  const showNextImages = (e) => {
-    e.preventDefault();
-    // Calculate the index of the first image in the next set
-    const nextIndex = (currentIndex + 4) % images.length;
-
-    // Update the state with the new index
-    setCurrentIndex(nextIndex);
-    setActiveDotIndex(nextIndex > 0 ? nextIndex / 4 : images.length / 4);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
-
-  const showPreviousImages = (e) => {
-    e.preventDefault();
-
-    // Calculate the index of the first image in the previous set
-    const previousIndex =
-      (currentIndex - 4 + images.length) % images.length;
-
-    // Update the state with the new index
-    setCurrentIndex(previousIndex);
-    setActiveDotIndex(previousIndex > 0 ? previousIndex / 4 : images.length / 4);
-  };
-
-
   return (
     <>
       <div style={{
-        display: 'flex', marginLeft: '8rem', marginTop: '-2rem'
+        display: 'flex', marginLeft: '6rem', marginTop: '1rem'
       }}>
         <p style={{
-          marginLeft: '-1rem', marginTop: '1rem', color: 'black', fontSize: '20px', paddingTop: '3px',
+          marginLeft: '1rem', marginTop: '1rem', color: 'black', fontSize: '20px', paddingTop: '3px',
           fontWeight: '500', fontFamily: 'Montserrat', width: "400px"
         }}>You might be interested in</p>
       </div>
-
-      <div className="image-gallery">
-        {/* Show the images */}
-        <div className="image-gallery-row">
-          {images.slice(currentIndex, currentIndex + 4).map((image, index) => (
-            <img
-              key={index}
-              className="image-gallery-image"
-              src={image.src}
-              alt={image.alt} style={{ borderRadius: '0.7rem', height: '18rem', cursor: 'pointer' }}
-            />
-          ))}
-        </div>
-
-        {/* Show the dots */}
-        <div className="image-gallery-dots">
-          {Array.from({ length: images.length / 4 }, (_, i) => i).map((dotIndex) => (
-            <span
-              key={dotIndex}
-              className={"image-gallery-dot" + (dotIndex === activeDotIndex ? " active" : "")}
-              onClick={() => {
-                setCurrentIndex(dotIndex * 4);
-                setActiveDotIndex(dotIndex);
-              }}
-            ></span>
-          ))}
-        </div>
-      </div>
+      <Slider {...settings } style={{marginBottom:'5rem',width:'1100px',marginLeft:'7rem'}}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img className="image-gallery-image"  src={image.src} alt={image.alt} style={{ borderRadius: '0.7rem', height: '18rem', cursor: 'pointer' ,
+          marginBottom:'1rem'}} />
+          </div>
+        ))}
+      </Slider>
     </>
   );
 }

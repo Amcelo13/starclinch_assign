@@ -15,8 +15,8 @@
   }
   
   .image-gallery-image {
-    width: 220px;
-    height: 300px;
+    /* width: 220px; */
+    height: 17rem;
     margin-right: 4rem;
     
   }
