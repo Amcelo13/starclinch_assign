@@ -6,10 +6,10 @@ import Artists from './components/Artists'
 import Tags from './components/Tags'
 function Home() {
   return (
-    <div>
+    <div style={{maxWidth:'100vw'}}>
 
       <Nav />
-      <Bio style={{maxWidth:"100vw"}}/>
+      <Bio style={{maxWidth:"100vw", }}/>
       <Artists style={{maxWidth:"100vw"}}/>
       <Artists1 style={{maxWidth:"100vw"}}/>
       <Tags style={{maxWidth:"100vw"}}/>

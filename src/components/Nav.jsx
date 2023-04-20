@@ -14,14 +14,15 @@ function Nav() {
         <div style={{paddingTop:'0.2rem',fontFamily: 'Montserrat',marginRight:'5rem',}}>
           <ul id="navbar">
             <li>
-            <select style={{padding:'8px 14px ',backgroundColor:'#fff',color:'black',border:'none',cursor:'pointer',fontSize:'15px',fontWeight:'500',fontFamily: 'Montserrat',
-          }} name="" id="">
+            <select style={{ padding:'8px 14px ',marginRight:'-2rem',backgroundColor:'#fff',color:'black',border:'none',cursor:'pointer',fontSize:'13px',fontWeight:'550',fontFamily: 'Montserrat',marginBottom:'-2rem'
+          }} name="" id="nm">
               <option  value="">Entertainers</option>
             </select>
             </li>
             <li>
-            <select style={{padding:'8px 14px ',backgroundColor:'#fff',color:"black",border:'none',cursor:'pointer',fontSize:'15px',fontFamily: 'Montserrat',fontWeight:'500'}} name="" id="">
-              <option  value="">Join Community</option>
+            <select style={{padding:'8px 14px ',marginRight:'-2rem',backgroundColor:'#fff',color:"black",border:'none',cursor:'pointer',fontSize:'13px',fontFamily: 'Montserrat',fontWeight:'550',
+            marginBottom:'-2rem'}} name="" id="nm">
+              <option   value="">Join Community</option>
             </select>
             </li>
             <li >

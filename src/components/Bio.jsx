@@ -57,7 +57,7 @@ const handleNavigate = ()=>{
       display: 'flex', marginLeft: '6rem', marginTop: '1rem',width:'1100px'
     }}>
       <img src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=400&dpr=1.5" alt="" width="380px" height="300px" style={{borderRadius:'1rem', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' }}/>
-      <div style={{fontFamily: 'Montserrat', marginLeft: '3rem', marginTop: '2.5rem', marginRight: '5rem' }}>
+      <div style={{fontFamily: 'Montserrat', marginLeft: '3rem', marginTop: '2.5rem', marginRight: '1rem' }}>
         <p style={{fontFamily: 'Montserrat', fontSize: '24px', color: 'black', lineHeight: '1.1rem',fontWeight:'700' }}>Ranbir Kapoor</p>
         <p style={{fontFamily: 'Montserrat', fontSize: '18px', lineHeight: '1rem' }}>(CELEBRITY APPEARANCE)</p>
         <p style={{ fontSize: '16px', lineHeight: '0.5rem',  color: 'gray', paddingBottom: '0.8rem', fontWeight:'700'}}>Mumbai, Maharashtra </p>
@@ -67,7 +67,7 @@ const handleNavigate = ()=>{
     </div>
     <img style={{ marginLeft: '7rem', paddingTop: '4rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="https://i.ibb.co/bb3vcSk/gallery.png" alt="" width="110px" />
 
-    <div style={{width:'1080px',borderRadius:'1rem',marginLeft:'6rem',height:'auto',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'6rem',paddingBottom:'1.2rem'}}>
+    <div style={{width:'1080px',borderRadius:'1rem',marginLeft:'6rem',height:'auto',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'-1rem',paddingBottom:'1.2rem'}}>
     <MyWrapper />
     </div>
    

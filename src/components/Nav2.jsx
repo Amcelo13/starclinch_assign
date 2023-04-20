@@ -14,12 +14,14 @@ function Nav() {
       <div style={{ paddingTop: '0.2rem', fontFamily: 'Montserrat', }}>
         <ul id="navbar">
           <li style={{ marginLeft: '3rem' }}>
-            <select style={{ padding: '8px 5px ', color:'black',backgroundColor: '#fff', border: 'none', cursor: 'pointer', fontSize: '15px', fontWeight: '500', fontFamily: 'Montserrat', }} name="" id="">
+            <select style={{ padding: '8px 5px ',fontSize:'12px', color:'black',backgroundColor: '#fff', border: 'none', cursor: 'pointer', fontSize: '12px', fontWeight: '550', fontFamily: 'Montserrat',marginBottom:'-2rem' ,
+          marginRight:'-1rem'}} name="" id="">
               <option value="" >Browse by Category</option>
             </select>
           </li>
           <li>
-            <select style={{ marginRight: '0rem', padding: '8px 5px ', backgroundColor: '#fff', border: 'none', cursor: 'pointer', fontSize: '15px', fontFamily: 'Montserrat', fontWeight: '500' , color:'black'}} name="" id="">
+            <select style={{ marginRight: '-1rem', padding: '8px 5px ', backgroundColor: '#fff', border: 'none', cursor: 'pointer', fontSize: '12px', fontFamily: 'Montserrat', fontWeight: '550' , color:'black',
+            marginBottom:'-2rem'}} name="" id="">
               <option value="">For Artists</option>
             </select>
           </li>
