@@ -64,7 +64,7 @@ function Tags() {
     height:'110px',borderTopRightRadius:'1.5rem'}}>
         <center>
             <button style={{fontFamily: 'Montserrat',marginTop:'2rem',borderRadius:'2rem',padding:"6px",paddingLeft:'2.5rem',outline:'none',paddingRight:'2.5rem',
-                color:'blue',fontWeight:'500',fontSize:'19px'}}>&#8592; &nbsp; Go Back</button>
+                color:'blue',fontWeight:'500',fontSize:'19px',fontWeight:'550',outline:'none',borderColor:'none'}}>&#8592; &nbsp; Go Back</button>
             </center> 
         </div>
         <img src="https://i.pinimg.com/originals/98/42/dd/9842dd15c37f39060ab371426d837084.jpg" style={{width:'100%',cursor:'pointer'}} alt="" />
