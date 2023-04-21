@@ -154,6 +154,11 @@ body{
   background-repeat: no-repeat;
   cursor: pointer;
 }
-#nm{
-  font-size: 2px;
+.mn{
+  padding-left: 7rem;
+  padding-top: 2px;
+}
+.mn1{
+  padding-left: 8.5rem;
+  padding-top: 2px;
 }

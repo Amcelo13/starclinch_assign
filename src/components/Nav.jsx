@@ -14,16 +14,18 @@ function Nav() {
         <div style={{paddingTop:'0.2rem',fontFamily: 'Montserrat',marginRight:'5rem',}}>
           <ul id="navbar">
             <li>
-            <select style={{ padding:'8px 14px ',marginRight:'-2rem',backgroundColor:'#fff',color:'black',border:'none',cursor:'pointer',fontSize:'13px',fontWeight:'550',fontFamily: 'Montserrat',marginBottom:'-2rem'
+            <button style={{ backgroundColor:'#fff',color:'black',border:'none',cursor:'pointer',fontSize:'12.5px',fontWeight:'550',fontFamily: 'Montserrat',marginBottom:'-2rem'
           }} name="" id="nm">
-              <option  value="">Entertainers</option>
-            </select>
+            Entertainers  <i className="fa fa-chevron-down hadid mn"></i>
+ 
+            </button>
             </li>
-            <li>
-            <select style={{padding:'8px 14px ',marginRight:'-2rem',backgroundColor:'#fff',color:"black",border:'none',cursor:'pointer',fontSize:'13px',fontFamily: 'Montserrat',fontWeight:'550',
-            marginBottom:'-2rem'}} name="" id="nm">
-              <option   value="">Join Community</option>
-            </select>
+             <li>
+            <button style={{ backgroundColor:'#fff',color:'black',border:'none',cursor:'pointer',fontSize:'12.5px',fontWeight:'550',fontFamily: 'Montserrat',marginBottom:'-2rem'
+          }} name="" id="nm">
+            Join Community  <i className="fa fa-chevron-down hadid mn1"></i>
+
+            </button>
             </li>
             <li >
             <button  id='m2' style={{marginRight:'-2rem'}}>Post Your Requirement</button>
