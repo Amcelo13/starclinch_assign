@@ -54,7 +54,7 @@ const handleNavigate = ()=>{
     </div>
 
     <div style={{
-      display: 'flex', marginLeft: '6rem', marginTop: '1rem',width:'1100px'
+      display: 'flex', marginLeft: '6rem', marginTop: '1rem',width:'auto'
     }}>
       <img src="https://wpcdn.starclinch.in/2019/03/26642.jpg?format=webp&w=400&dpr=1.5" alt="" width="380px" height="300px" style={{borderRadius:'1rem', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' }}/>
       <div style={{fontFamily: 'Montserrat', marginLeft: '3rem', marginTop: '2.5rem', marginRight: '1rem' }}>
@@ -67,7 +67,7 @@ const handleNavigate = ()=>{
     </div>
     <img style={{ marginLeft: '7rem', paddingTop: '4rem',cursor:'pointer' ,marginBottom:'1.5rem'}} src="https://i.ibb.co/bb3vcSk/gallery.png" alt="" width="110px" />
 
-    <div style={{width:'1080px',borderRadius:'1rem',marginLeft:'6rem',height:'auto',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'-1rem',paddingBottom:'1.2rem'}}>
+    <div style={{width:'auto',borderRadius:'1rem',marginLeft:'6rem',height:'auto',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',marginBottom:'2rem',marginRight:'-1rem',paddingBottom:'1.2rem',marginRight:'6rem'}}>
     <MyWrapper />
     </div>
    
@@ -76,11 +76,11 @@ const handleNavigate = ()=>{
 
             {/* --------------------------ACCORDIAN------------------------- */}
     <div className="accordion" id="accordionExample" style={{fontFamily: 'Montserrat' }}>
-      <div className="accordion-item" style={{ marginBottom: '1.2rem',width: '1080px' ,marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' }}>
+      <div className="accordion-item" style={{ marginBottom: '1.2rem',marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px',width:'auto',marginRight:'6rem' }}>
         <h2 className="accordion-header" style={{marginBottom: '1rem  ',paddingBottom:'1rem', height: '55px' ,overflowY:'hidden',marginTop:'-1rem'}}>
           <div style={{ display: 'flex' }}>
             <img src="https://stcdn.starclinch.in/mobile/images/profile/biography_icon.svg" alt="" style={{ paddingLeft: '1rem' }} />
-            <button className="accordion-button " style={{fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white'}} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button className="accordion-button " style={{fontFamily: 'Montserrat',fontSize: '16px', fontWeight: '510', backgroundColor: 'white', borderColor: 'white'}} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Biography
             </button>
           </div>
@@ -92,11 +92,11 @@ const handleNavigate = ()=>{
         </div>
       </div>
 
-      <div className="accordion-item" style={{ marginBottom: '2rem', width: '1080px', marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' }}>
+      <div className="accordion-item" style={{ marginBottom: '2rem', width: '1080px', marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' ,width:'auto',marginRight:'6rem' }}>
         <h2 className="accordion-header"  style={{ marginBottom: '1rem  ',paddingBottom:'1rem', height: '55px' ,overflowY:'hidden',marginTop:'-1rem'}}>
           <div style={{ display: 'flex' }}>
             <img src="https://stcdn.starclinch.in/mobile/images/profile/Performance_Details.svg" alt="" style={{ paddingLeft: '1rem' }} />
-            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontSize: '16px', fontWeight: '510', backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Performance Details
             </button>
           </div>
@@ -108,12 +108,12 @@ const handleNavigate = ()=>{
         </div>
       </div>
       <div className="accordion-item" style={{
-        marginBottom: '2rem', width: '1080px', marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px'
+        marginBottom: '2rem', width: '1080px', marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px',width:'auto',marginRight:'6rem' 
       }}>
         <h2 className="accordion-header"  style={{ marginBottom: '1rem  ',paddingBottom:'1rem', height: '55px' ,overflowY:'hidden',marginTop:'-1rem'}}>
           <div style={{ display: 'flex' }}>
             <img src="https://stcdn.starclinch.in/mobile/images/profile/performance_language_v2.svg" alt="" style={{ paddingLeft: '1rem' }} />
-            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontSize: '16px', fontWeight: '510',backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Performance Language
             </button>
           </div>
@@ -124,11 +124,11 @@ const handleNavigate = ()=>{
           </div>
         </div>
       </div>
-      <div className="accordion-item" style={{ marginBottom: '2rem', width: '1080px', marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px' }}>
+      <div className="accordion-item" style={{ marginBottom: '2rem', width: '1080px', marginLeft: '6rem', borderRadius: '1rem', overflow: 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px',width:'auto',marginRight:'6rem'  }}>
         <h2 className="accordion-header" s style={{ marginBottom: '1rem  ',paddingBottom:'1rem', height: '55px' ,overflowY:'hidden',marginTop:'-1rem'}}>
           <div style={{ display: 'flex' }}>
             <img src="https://starclinch.com/static/mobile/images/profile/review_icon.svg" alt="" style={{ paddingLeft: '1rem', width: '45px' ,height:'80px',paddingTop:'3px'}} />
-            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontSize: '20px', fontWeight: '500', backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <button className="accordion-button collapsed" style={{ fontFamily: 'Montserrat',fontSize: '16px', fontWeight: '510', backgroundColor: 'white', borderColor: 'white' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               Review
             </button>
           </div>

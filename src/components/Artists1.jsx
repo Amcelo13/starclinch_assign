@@ -60,7 +60,7 @@ function Artists() {
   };
   return (
     <>
-      <div style={{
+      <div style={{width:'auto', 
         display: 'flex', marginLeft: '6rem', marginTop: '1rem'
       }}>
         <p style={{
@@ -68,7 +68,7 @@ function Artists() {
           fontWeight: '500', fontFamily: 'Montserrat', width: "400px"
         }}>You might be interested in</p>
       </div>
-      <Slider {...settings } style={{marginBottom:'5rem',width:'1100px',marginLeft:'7rem'}}>
+      <Slider {...settings } style={{marginBottom:'5rem',width:'1100px',marginLeft:'7rem',width:'auto',marginRight:'5rem' }}>
         {images.map((image, index) => (
           <div key={index}>
             <img className="image-gallery-image"  src={image.src} alt={image.alt} style={{ borderRadius: '0.7rem', height: '19rem', cursor: 'pointer' ,
