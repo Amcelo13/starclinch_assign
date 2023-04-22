@@ -58,11 +58,8 @@ function Bio() {
     outline: 'none',
     fontSize: '14px',
     cursor:'pointer',
-    '&:hover': {
-      textDecoration: 'none',
-      color: 'red',
-      outline: 'none'
-    }
+    
+    
 
   }
 
