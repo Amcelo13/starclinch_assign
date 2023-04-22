@@ -181,7 +181,7 @@ function Bio() {
                     <img src="https://stcdn.starclinch.in/header/signup.webp" alt="" width="33px" height="35px" />
                     <a href='/' style={fg}>Signup</a>
                   </div>
-                  <div style={{ display: 'flex', paddingLeft: '1.5rem', paddingTop: '2px', paddingBottom: '0.4rem' }}>
+                  <div style={{ display: 'flex', paddingLeft: '1.5rem', paddingTop: '2px', paddingBottom: '0.5rem' }}>
                     <img src="https://stcdn.starclinch.in/header/jobs.webp" alt="" width="33px" height="35px" />
                     <a href='/' style={fg}> Jobs</a>
                   </div>
