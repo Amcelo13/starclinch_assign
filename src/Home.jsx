@@ -7,8 +7,8 @@ import Tags from './components/Tags'
 function Home() {
   return (
     <div style={{maxWidth:'100vw'}}>
-
-      <Nav />
+{/* 
+      <Nav /> */}
       <Bio style={{maxWidth:"100vw", }}/>
       <Artists style={{maxWidth:"100vw"}}/>
       <Artists1 style={{maxWidth:"100vw"}}/>

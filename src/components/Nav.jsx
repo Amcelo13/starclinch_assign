@@ -1,11 +1,14 @@
 import React from 'react';
 import './Nav.css';
 import { useNavigate } from 'react-router-dom';
+
 function Nav() {
   const navigation = useNavigate()
+  
   const handlclick =  ()=>{
     navigation('/')
   }
+
   return (
       <section id="header" style={{zIndex:'5', position:'fixed',boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px',marginTop:'0px',maxWidth:'100vw'}}>
         
@@ -21,7 +24,7 @@ function Nav() {
             </button>
             </li>
              <li>
-            <button style={{ backgroundColor:'#fff',color:'black',border:'none',cursor:'pointer',fontSize:'12.5px',fontWeight:'550',fontFamily: 'Montserrat',marginBottom:'-2rem'
+            <button onClick={()=>openDialog()} style={{ backgroundColor:'#fff',color:'black',border:'none',cursor:'pointer',fontSize:'12.5px',fontWeight:'550',fontFamily: 'Montserrat',marginBottom:'-2rem'
           }} name="" id="nm">
             Join Community  <i className="fa fa-chevron-down hadid mn1"></i>
 

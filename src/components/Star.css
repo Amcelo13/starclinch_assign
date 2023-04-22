@@ -53,3 +53,29 @@
     top:0px;
     left:0px; 
 }
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    /* margin-top: 3rem; */
+    border-bottom: 12px solid white ;
+    position: absolute;
+    top:-0.7rem;
+    left: 29.5rem ;
+    
+
+}
+.arrow-up1 {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    /* margin-top: 3rem; */
+    border-bottom: 12px solid white ;
+    position: absolute;
+    top:-0.7rem;
+    left: 11rem;
+    
+
+}
