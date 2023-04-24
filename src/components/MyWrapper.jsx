@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import './imgj.css'
 
 const MyWrapper = () => {
   const images = [
@@ -76,17 +77,10 @@ const MyWrapper = () => {
         }}
       >
         {images.map((image, i) => (
-          <img
+          <img className = "imgj"
             key={i}
             src={image}
-            style={{
-              width: "100%",
-              display: "block",
-              borderRadius: "1rem",
-              boxShadow:
-                "3px rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;",
-              cursor: "pointer",
-            }}
+        
             onClick={() => showModal(i)}
           />
         ))}
