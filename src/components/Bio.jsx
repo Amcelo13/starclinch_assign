@@ -168,7 +168,7 @@ function Bio() {
               <>
                 <div style={{
                   display: 'flex', flexDirection: 'column', flexWrap: 'wrap', position: 'absolute', top: '4.5rem', backgroundColor: 'white', borderRadius: '1rem', boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.16)',
-                  width: '24vw', right: -45, height: '55vh'
+                  width: '24vw', right: -45, height: 'auto'
                 }}>
                   <div className="arrow-up1"></div>
                   <img src="https://starclinch.com/static/mobile/images/header/artist_menu_image.svg" alt="" style={{ border: '1px solid black',width:'270px', margin: '1rem', borderRadius: '10px', marginLeft: '1.1rem' }} />
